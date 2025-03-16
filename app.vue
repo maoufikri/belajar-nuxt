@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <h1>Counter APP</h1>
-    <div v-if="!submitted">
+    <div>
       <input v-model="nama" placeholder="Masukkan Nama" type="text">
       <button @click="submitNama">submit</button>
     </div>
@@ -19,7 +19,7 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="js">
 import { ref, computed } from "vue";
 
 const nama = ref("");
@@ -44,7 +44,7 @@ const kurang = () => counter.value--;
 }
 
 button {
-  margin: 5px;
+  margin: 3px;
   padding: 3px;
   font-size: 15px;
   cursor: pointer;
